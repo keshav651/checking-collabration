@@ -21,7 +21,7 @@ export function signAuthToken(
   payload: AuthTokenPayload
 ): string {
   return jwt.sign(payload, jwtSecret, {
-    expiresIn: "1h",
+    expiresIn: "15m",
     issuer: "college-erp",
     audience: "college-erp-client",
   });
